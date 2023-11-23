@@ -16,6 +16,12 @@
 <text text-anchor="start" x="148" y="-116.9" font-family="Times,serif" font-size="12.00">files_read </text>
 <text text-anchor="start" x="211" y="-116.9" font-family="Times,serif" font-size="12.00" fill="red">●</text>
 </g>
+<!-- maildir_parse_flags -->
+<g id="node3" class="node">
+<title>maildir_parse_flags</title>
+<path fill="#ffffc0" stroke="black" stroke-width="1.5" d="M149,-72.5C149,-72.5 221,-72.5 221,-72.5 224.5,-72.5 228,-76 228,-79.5 228,-79.5 228,-86.5 228,-86.5 228,-90 224.5,-93.5 221,-93.5 221,-93.5 149,-93.5 149,-93.5 145.5,-93.5 142,-90 142,-86.5 142,-86.5 142,-79.5 142,-79.5 142,-76 145.5,-72.5 149,-72.5"/>
+<text text-anchor="start" x="150" y="-79.9" font-family="Times,serif" font-size="12.00">parse_flags</text>
+</g>
 <!-- maildir_parse_message -->
 <g id="node4" class="node">
 <title>maildir_parse_message</title>
@@ -27,13 +33,6 @@
 <title>maildir_files_read&#45;&gt;maildir_parse_message</title>
 <path fill="none" stroke="black" d="M229.96,-119C245.21,-119 262.57,-119 278.84,-119"/>
 <polygon fill="black" stroke="black" points="278.74,-120.75 283.74,-119 278.74,-117.25 278.74,-120.75"/>
-</g>
-<!-- maildir_hcache_store -->
-<g id="node7" class="node">
-<title>maildir_hcache_store</title>
-<path fill="#c0ffff" stroke="black" stroke-width="1.5" d="M136.5,-72.5C136.5,-72.5 233.5,-72.5 233.5,-72.5 237,-72.5 240.5,-76 240.5,-79.5 240.5,-79.5 240.5,-86.5 240.5,-86.5 240.5,-90 237,-93.5 233.5,-93.5 233.5,-93.5 136.5,-93.5 136.5,-93.5 133,-93.5 129.5,-90 129.5,-86.5 129.5,-86.5 129.5,-79.5 129.5,-79.5 129.5,-76 133,-72.5 136.5,-72.5"/>
-<text text-anchor="start" x="137.5" y="-80.9" font-family="Times,serif" font-size="12.00">hcache_store </text>
-<text text-anchor="start" x="221.5" y="-80.9" font-family="Times,serif" font-size="12.00" fill="red">●</text>
 </g>
 <!-- maildir_files_scan -->
 <g id="node2" class="node">
@@ -49,17 +48,12 @@
 <text text-anchor="start" x="139" y="-152.9" font-family="Times,serif" font-size="12.00">hcache_read </text>
 <text text-anchor="start" x="220" y="-152.9" font-family="Times,serif" font-size="12.00" fill="red">●</text>
 </g>
-<!-- maildir_parse_flags -->
-<g id="node3" class="node">
-<title>maildir_parse_flags</title>
-<path fill="#ffffc0" stroke="black" stroke-width="1.5" d="M149,-36.5C149,-36.5 221,-36.5 221,-36.5 224.5,-36.5 228,-40 228,-43.5 228,-43.5 228,-50.5 228,-50.5 228,-54 224.5,-57.5 221,-57.5 221,-57.5 149,-57.5 149,-57.5 145.5,-57.5 142,-54 142,-50.5 142,-50.5 142,-43.5 142,-43.5 142,-40 145.5,-36.5 149,-36.5"/>
-<text text-anchor="start" x="150" y="-43.9" font-family="Times,serif" font-size="12.00">parse_flags</text>
-</g>
-<!-- move_to_mailbox2 -->
-<g id="node10" class="node">
-<title>move_to_mailbox2</title>
-<path fill="#ffffff" stroke="black" stroke-width="1.5" d="M128,-0.5C128,-0.5 242,-0.5 242,-0.5 245.5,-0.5 249,-4 249,-7.5 249,-7.5 249,-14.5 249,-14.5 249,-18 245.5,-21.5 242,-21.5 242,-21.5 128,-21.5 128,-21.5 124.5,-21.5 121,-18 121,-14.5 121,-14.5 121,-7.5 121,-7.5 121,-4 124.5,-0.5 128,-0.5"/>
-<text text-anchor="middle" x="185" y="-7.9" font-family="Times,serif" font-size="12.00">move_to_mailbox2</text>
+<!-- maildir_hcache_store -->
+<g id="node7" class="node">
+<title>maildir_hcache_store</title>
+<path fill="#c0ffff" stroke="black" stroke-width="1.5" d="M136.5,-36.5C136.5,-36.5 233.5,-36.5 233.5,-36.5 237,-36.5 240.5,-40 240.5,-43.5 240.5,-43.5 240.5,-50.5 240.5,-50.5 240.5,-54 237,-57.5 233.5,-57.5 233.5,-57.5 136.5,-57.5 136.5,-57.5 133,-57.5 129.5,-54 129.5,-50.5 129.5,-50.5 129.5,-43.5 129.5,-43.5 129.5,-40 133,-36.5 136.5,-36.5"/>
+<text text-anchor="start" x="137.5" y="-44.9" font-family="Times,serif" font-size="12.00">hcache_store </text>
+<text text-anchor="start" x="221.5" y="-44.9" font-family="Times,serif" font-size="12.00" fill="red">●</text>
 </g>
 <!-- maildir_parse_stream -->
 <g id="node5" class="node">
@@ -76,20 +70,26 @@
 <!-- maildir_parse_key -->
 <g id="node8" class="node">
 <title>maildir_parse_key</title>
-<path fill="#c0ffff" stroke="black" stroke-width="1.5" d="M307.5,-72.5C307.5,-72.5 370.5,-72.5 370.5,-72.5 374,-72.5 377.5,-76 377.5,-79.5 377.5,-79.5 377.5,-86.5 377.5,-86.5 377.5,-90 374,-93.5 370.5,-93.5 370.5,-93.5 307.5,-93.5 307.5,-93.5 304,-93.5 300.5,-90 300.5,-86.5 300.5,-86.5 300.5,-79.5 300.5,-79.5 300.5,-76 304,-72.5 307.5,-72.5"/>
-<text text-anchor="start" x="308.5" y="-79.9" font-family="Times,serif" font-size="12.00">parse_key</text>
+<path fill="#c0ffff" stroke="black" stroke-width="1.5" d="M307.5,-54.5C307.5,-54.5 370.5,-54.5 370.5,-54.5 374,-54.5 377.5,-58 377.5,-61.5 377.5,-61.5 377.5,-68.5 377.5,-68.5 377.5,-72 374,-75.5 370.5,-75.5 370.5,-75.5 307.5,-75.5 307.5,-75.5 304,-75.5 300.5,-72 300.5,-68.5 300.5,-68.5 300.5,-61.5 300.5,-61.5 300.5,-58 304,-54.5 307.5,-54.5"/>
+<text text-anchor="start" x="308.5" y="-61.9" font-family="Times,serif" font-size="12.00">parse_key</text>
 </g>
 <!-- maildir_hcache_read&#45;&gt;maildir_parse_key -->
 <g id="edge2" class="edge">
 <title>maildir_hcache_read&#45;&gt;maildir_parse_key</title>
-<path fill="none" stroke="black" d="M232.88,-144.52C238.49,-142.43 244,-139.94 249,-137 268.5,-125.53 265.79,-112.95 285,-101 288.14,-99.05 291.52,-97.28 295,-95.68"/>
-<polygon fill="black" stroke="black" points="295.22,-97.48 299.13,-93.9 293.84,-94.27 295.22,-97.48"/>
+<path fill="none" stroke="black" d="M232.88,-144.52C238.49,-142.43 244,-139.94 249,-137 268.5,-125.53 267.56,-115.42 285,-101 294.69,-92.98 306.16,-85.03 315.95,-78.64"/>
+<polygon fill="black" stroke="black" points="316.66,-80.26 319.92,-76.08 314.76,-77.32 316.66,-80.26"/>
 </g>
 <!-- maildir_hcache_store&#45;&gt;maildir_parse_key -->
 <g id="edge3" class="edge">
 <title>maildir_hcache_store&#45;&gt;maildir_parse_key</title>
-<path fill="none" stroke="black" d="M240.45,-83C258.2,-83 277.66,-83 294.5,-83"/>
-<polygon fill="black" stroke="black" points="294.07,-84.75 299.07,-83 294.07,-81.25 294.07,-84.75"/>
+<path fill="none" stroke="black" d="M240.45,-53.45C258.2,-55.55 277.66,-57.85 294.5,-59.85"/>
+<polygon fill="black" stroke="black" points="293.91,-61.54 299.08,-60.39 294.32,-58.06 293.91,-61.54"/>
+</g>
+<!-- move_to_mailbox2 -->
+<g id="node10" class="node">
+<title>move_to_mailbox2</title>
+<path fill="#ffffff" stroke="black" stroke-width="1.5" d="M128,-0.5C128,-0.5 242,-0.5 242,-0.5 245.5,-0.5 249,-4 249,-7.5 249,-7.5 249,-14.5 249,-14.5 249,-18 245.5,-21.5 242,-21.5 242,-21.5 128,-21.5 128,-21.5 124.5,-21.5 121,-18 121,-14.5 121,-14.5 121,-7.5 121,-7.5 121,-4 124.5,-0.5 128,-0.5"/>
+<text text-anchor="middle" x="185" y="-7.9" font-family="Times,serif" font-size="12.00">move_to_mailbox2</text>
 </g>
 <!-- mbox_open -->
 <g id="node9" class="node">
@@ -112,8 +112,8 @@
 <!-- mbox_open&#45;&gt;maildir_parse_flags -->
 <g id="edge9" class="edge">
 <title>mbox_open&#45;&gt;maildir_parse_flags</title>
-<path fill="none" stroke="black" d="M63.53,-90.64C78.96,-82.92 100.98,-72.46 121,-65 126.32,-63.02 131.97,-61.12 137.6,-59.36"/>
-<polygon fill="black" stroke="black" points="137.98,-61.07 142.25,-57.94 136.96,-57.72 137.98,-61.07"/>
+<path fill="none" stroke="black" d="M84.89,-95.7C101.04,-93.63 119.65,-91.24 136.36,-89.1"/>
+<polygon fill="black" stroke="black" points="136.18,-90.89 140.91,-88.52 135.73,-87.42 136.18,-90.89"/>
 </g>
 <!-- mbox_open&#45;&gt;maildir_hcache_read -->
 <g id="edge7" class="edge">
@@ -124,8 +124,8 @@
 <!-- mbox_open&#45;&gt;maildir_hcache_store -->
 <g id="edge8" class="edge">
 <title>mbox_open&#45;&gt;maildir_hcache_store</title>
-<path fill="none" stroke="black" d="M84.89,-95.7C96.93,-94.16 110.33,-92.44 123.29,-90.78"/>
-<polygon fill="black" stroke="black" points="123.37,-92.53 128.11,-90.16 122.93,-89.06 123.37,-92.53"/>
+<path fill="none" stroke="black" d="M63.53,-90.64C78.96,-82.92 100.98,-72.46 121,-65 126.32,-63.02 131.97,-61.12 137.6,-59.36"/>
+<polygon fill="black" stroke="black" points="137.98,-61.07 142.25,-57.94 136.96,-57.72 137.98,-61.07"/>
 </g>
 <!-- mbox_open&#45;&gt;move_to_mailbox2 -->
 <g id="edge10" class="edge">
