@@ -1,0 +1,49 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	mutt_str_append_item [ fillcolor="#ffd0d0" ]
+
+	// Functions that need to keep the string
+	imap_tags_commit [ label=<imap_tags_commit <font color="red">●</font>> ]
+	msg_parse_flags  [ label=<msg_parse_flags  <font color="red">●</font>> ]
+
+	driver_tags_get                 -> driver_tags_getter
+	driver_tags_getter              -> mutt_str_append_item
+	driver_tags_get_transformed     -> driver_tags_getter
+	driver_tags_get_transformed_for -> driver_tags_getter
+	driver_tags_get_with_hidden     -> driver_tags_getter
+	imap_sync_message_for_copy      -> driver_tags_get_with_hidden
+	imap_tags_commit                -> driver_tags_get_with_hidden
+	index_format_str                -> driver_tags_get_transformed
+	index_format_str                -> driver_tags_get_transformed_for
+	msg_parse_flags                 -> mutt_str_append_item
+	mutt_copy_header                -> driver_tags_get
+	nm_read_entire_thread           -> mutt_str_append_item
+	nm_record_message               -> driver_tags_get
+	op_main_modify_tags             -> driver_tags_get_with_hidden
+	pattern_exec                    -> driver_tags_get_with_hidden
+	rename_filename                 -> driver_tags_get
+	update_email_tags               -> mutt_str_append_item
+
+}
+
