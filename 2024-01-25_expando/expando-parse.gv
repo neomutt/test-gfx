@@ -1,0 +1,81 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	// Called from outside library
+	node [ fillcolor="#ffffff" ]
+	expando_parse               [ label=<expando_parse <font color="red">●</font>> ]
+	expando_parse_enclosed_text [ label=<expando_parse_enclosed_text <font color="red">●</font>> ]
+
+	// Free functions
+	node [ fillcolor="#ffe0ff" ]
+	expando_free
+	expando_tree_free
+	free_expando_private
+	free_expando_private_condition_node
+	free_node
+	free_tree
+
+	// New functions
+	node [ fillcolor="#ffffe0" ]
+	expando_free [ label=<expando_free <font color="red">●</font>> ]
+	expando_new
+	new_condition_node
+	new_empty_node
+	new_expando_node
+	new_pad_node
+	new_text_node
+
+	node [ fillcolor="#ffffff" ]
+	expando_free                        -> expando_tree_free
+	expando_parse                       -> expando_free
+	expando_parse                       -> expando_new
+	expando_parse                       -> expando_tree_parse
+	expando_parse_enclosed_text         -> new_text_node
+	expando_parse_enclosed_text         -> skip_until_ch
+	expando_tree_free                   -> free_tree
+	expando_tree_parse                  -> append_node
+	expando_tree_parse                  -> new_empty_node
+	expando_tree_parse                  -> parse_node
+	free_expando_private_condition_node -> free_node
+	free_expando_private_condition_node -> free_tree
+	free_tree                           -> free_node
+	new_condition_node                  -> free_expando_private_condition_node
+	new_expando_node                    -> free_expando_private
+	new_pad_node                        -> free_expando_private
+	parse_expando_node                  -> new_expando_node
+	parse_expando_node                  -> parse_format
+	parse_expando_node                  -> skip_classic_expando
+	parse_expando_node                  -> skip_until_classic_expando
+	parse_node                          -> append_node
+	parse_node                          -> new_condition_node
+	parse_node                          -> new_empty_node
+	parse_node                          -> new_pad_node
+	parse_node                          -> new_text_node
+	parse_node                          -> parse_expando_node
+	parse_node                          -> skip_until_ch
+	parse_node                          -> skip_until_ch2_counted
+	parse_node                          -> skip_until_ch_counted
+	parse_node                          -> skip_until_ch_or_end
+	skip_until_classic_expando          -> is_valid_classic_expando
+
+}

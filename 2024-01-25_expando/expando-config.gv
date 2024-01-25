@@ -1,0 +1,41 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	subgraph cluster_config
+	{
+		fontcolor="black"
+		color="#e0e000"
+		fillcolor="white"
+		style="dashed"
+		label="Config Functions"
+
+		node [ fillcolor="#ffffe0" ]
+		expando_reset      -> expando_destroy
+		expando_reset      -> expando_equal
+		expando_string_set -> expando_destroy
+		expando_string_set -> expando_equal
+		expando_native_get    
+		expando_native_set    
+		expando_string_get    
+	}
+}

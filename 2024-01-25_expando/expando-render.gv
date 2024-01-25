@@ -1,0 +1,46 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	subgraph cluster_render
+	{
+		fontcolor="black"
+		color="#0000e0"
+		fillcolor="white"
+		style="dashed"
+		label="Render Functions"
+
+		node [ fillcolor="#e0e0ff" ]
+		expando_render [ label=<expando_render <font color="red">●</font>> ]
+		conditional_format_callback -> format_tree
+		expando_render              -> format_tree
+		format_tree                 -> conditional_format_callback
+		format_tree                 -> pad_format_callback
+		format_tree                 -> text_format_callback
+		pad_format_callback         -> pad_format_fill_eol
+		pad_format_callback         -> pad_format_hard_fill
+		pad_format_callback         -> pad_format_soft_fill
+		pad_format_hard_fill        -> format_tree
+		pad_format_soft_fill        -> format_tree
+	}
+
+}

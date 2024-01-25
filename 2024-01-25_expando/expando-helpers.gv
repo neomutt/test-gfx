@@ -1,0 +1,49 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	subgraph cluster_helpers
+	{
+		fontcolor="black"
+		color="#00e000"
+		fillcolor="white"
+		style="dashed"
+		label="Helper Functions"
+
+		node [ fillcolor="#e0ffe0" ]
+		format_int           [ label=<format_int <font color="red">●</font>> ]
+		format_int_flags     [ label=<format_int_flags <font color="red">●</font>> ]
+		format_int_simple    [ label=<format_int_simple <font color="red">●</font>> ]
+		format_string        [ label=<format_string <font color="red">●</font>> ]
+		format_string_flags  [ label=<format_string_flags <font color="red">●</font>> ]
+		format_string_simple [ label=<format_string_simple <font color="red">●</font>> ]
+
+		format_int           -> format_string
+		format_int_flags     -> format_int
+		format_int_simple    -> format_int
+		format_string        -> add_index_color
+		format_string_flags  -> format_string
+		format_string_simple -> format_string
+		mb_strlen_nonnull
+		mb_strwidth_nonnull
+	}
+}
