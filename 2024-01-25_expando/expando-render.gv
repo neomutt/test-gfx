@@ -31,16 +31,24 @@ digraph callgraph {
 
 		node [ fillcolor="#e0e0ff" ]
 		expando_render [ label=<expando_render <font color="red">●</font>> ]
+
 		conditional_format_callback -> format_tree
+		conditional_format_callback -> is_first_char
+		conditional_format_callback -> memcpy_safe
 		expando_render              -> format_tree
 		format_tree                 -> conditional_format_callback
+		format_tree                 -> mutt_strwidth_nonnull
 		format_tree                 -> pad_format_callback
 		format_tree                 -> text_format_callback
 		pad_format_callback         -> pad_format_fill_eol
 		pad_format_callback         -> pad_format_hard_fill
 		pad_format_callback         -> pad_format_soft_fill
+		pad_format_fill_eol         -> mutt_strwidth_nonnull
 		pad_format_hard_fill        -> format_tree
+		pad_format_hard_fill        -> mutt_strwidth_nonnull
+		pad_format_soft_fill        -> count_spec
 		pad_format_soft_fill        -> format_tree
+		pad_format_soft_fill        -> mutt_strwidth_nonnull
+		text_format_callback        -> memcpy_safe
 	}
-
 }
