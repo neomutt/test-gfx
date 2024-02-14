@@ -1,0 +1,155 @@
+digraph neomutt
+{
+
+	graph [
+		rankdir="TB"
+		nodesep="0.5"
+		ranksep="0.5"
+	];
+
+	node [
+		shape="plain"
+	];
+
+	edge [
+		penwidth="4.5"
+		arrowsize="1.0"
+		color="#c0c0c0"
+	];
+
+	obj_0x23a3f20 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#ffff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Text</b></font> <font point-size="12">(0x23a3f20)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">text</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"AAA"</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a3f60 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#80ff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Expando</b></font> <font point-size="12">(0x23a3f60)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">type</td>
+			<td border="0">=</td>
+			<td border="0" align="left">2</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">did</td>
+			<td border="0">=</td>
+			<td border="0" align="left">14</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">uid</td>
+			<td border="0">=</td>
+			<td border="0" align="left">1</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">string</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"b"</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a3fa0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#ffff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Text</b></font> <font point-size="12">(0x23a3fa0)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">text</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"CCC"</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a3fe0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#80ffff" port="top" colspan="3"><font color="#000000" point-size="20"><b>Pad</b></font> <font point-size="12">(0x23a3fe0)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">type</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"EPT_SOFT_FILL"</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">char</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"."</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a4050 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#ffff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Text</b></font> <font point-size="12">(0x23a4050)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">text</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"XXX"</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a4090 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#80ff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Expando</b></font> <font point-size="12">(0x23a4090)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">type</td>
+			<td border="0">=</td>
+			<td border="0" align="left">2</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">did</td>
+			<td border="0">=</td>
+			<td border="0" align="left">8</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">uid</td>
+			<td border="0">=</td>
+			<td border="0" align="left">23</td>
+		</tr>
+		<tr>
+			<td border="0" align="left">string</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"y"</td>
+		</tr>
+		</table>>
+	];
+
+	obj_0x23a40d0 [
+		label=<<table cellspacing="0" border="1" rows="*" color="#d0d0d0">
+		<tr>
+			<td border="0" align="left" bgcolor="#ffff80" port="top" colspan="3"><font color="#000000" point-size="20"><b>Text</b></font> <font point-size="12">(0x23a40d0)</font></td>
+		</tr>
+		<tr>
+			<td border="0" align="left">text</td>
+			<td border="0">=</td>
+			<td border="0" align="left">"ZZZ"</td>
+		</tr>
+		</table>>
+	];
+
+
+	obj_0x23a3f20 -> obj_0x23a3f60 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	obj_0x23a3f60 -> obj_0x23a3fa0 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	obj_0x23a3fa0 -> obj_0x23a3fe0 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	obj_0x23a3fe0 -> obj_0x23a4050 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	obj_0x23a4050 -> obj_0x23a4090 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	obj_0x23a4090 -> obj_0x23a40d0 [  edgetooltip="ExpandoNode->next" color="#808080" ];
+	{ rank=same obj_0x23a3f20 obj_0x23a3f60 obj_0x23a3fa0 obj_0x23a3fe0 obj_0x23a4050 obj_0x23a4090 obj_0x23a40d0 };
+
+}
