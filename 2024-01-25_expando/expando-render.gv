@@ -21,34 +21,32 @@ digraph callgraph {
 		arrowsize="0.5"
 	]
 
-	subgraph cluster_render
-	{
-		fontcolor="black"
-		color="#0000e0"
-		fillcolor="white"
-		style="dashed"
-		label="Render Functions"
+	render_api [ label="Node.render()" fillcolor="#ffffc0" ]
+	node_tree_render [ label=<<font color="red">●</font>node_tree_render> ]
 
-		node [ fillcolor="#e0e0ff" ]
-		expando_render [ label=<expando_render <font color="red">●</font>> ]
+	// Call node_tree_render() recursively
+	node_condition_render    [ label=<node_condition_render <font color="red">●</font>> ]
+	node_container_render    [ label=<node_container_render <font color="red">●</font>> ]
+	node_padding_render_eol  [ label=<node_padding_render_eol <font color="red">●</font>> ]
+	node_padding_render_hard [ label=<node_padding_render_hard <font color="red">●</font>> ]
+	node_padding_render_soft [ label=<node_padding_render_soft <font color="red">●</font>> ]
 
-		conditional_format_callback -> format_tree
-		conditional_format_callback -> is_first_char
-		conditional_format_callback -> memcpy_safe
-		expando_render              -> format_tree
-		format_tree                 -> conditional_format_callback
-		format_tree                 -> mutt_strwidth_nonnull
-		format_tree                 -> pad_format_callback
-		format_tree                 -> text_format_callback
-		pad_format_callback         -> pad_format_fill_eol
-		pad_format_callback         -> pad_format_hard_fill
-		pad_format_callback         -> pad_format_soft_fill
-		pad_format_fill_eol         -> mutt_strwidth_nonnull
-		pad_format_hard_fill        -> format_tree
-		pad_format_hard_fill        -> mutt_strwidth_nonnull
-		pad_format_soft_fill        -> count_spec
-		pad_format_soft_fill        -> format_tree
-		pad_format_soft_fill        -> mutt_strwidth_nonnull
-		text_format_callback        -> memcpy_safe
-	}
+	expando_render   -> node_tree_render
+	node_tree_render -> render_api
+
+	render_api -> node_condbool_render
+	render_api -> node_conddate_render
+	render_api -> node_condition_render
+	render_api -> node_container_render
+	render_api -> node_expando_render
+	render_api -> node_padding_render_eol
+	render_api -> node_padding_render_hard
+	render_api -> node_padding_render_soft
+	render_api -> node_text_render
+
+	node_expando_render      -> add_color
+	node_padding_render_eol  -> pad_string
+	node_padding_render_hard -> pad_string
+	node_padding_render_soft -> pad_string
+
 }

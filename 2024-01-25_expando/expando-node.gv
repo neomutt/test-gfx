@@ -1,0 +1,43 @@
+digraph callgraph {
+	graph [
+		rankdir="LR"
+		nodesep="0.2"
+		ranksep="0.5"
+		compound="true"
+	]
+
+	node [
+		shape="Mrecord"
+		fontsize="12"
+		fillcolor="#ffffff"
+		style="filled"
+		height="0.2"
+		penwidth="1.5"
+		color="black"
+	]
+
+	edge [
+		penwidth="1.0"
+		arrowsize="0.5"
+	]
+
+	node [ fillcolor="#ffffff" ]
+	node_condbool_new  -> node_new
+	node_conddate_new  -> node_conddate_private_free
+	node_conddate_new  -> node_conddate_private_new
+	node_conddate_new  -> node_new
+	node_condition_new -> node_new
+	node_container_new -> node_new
+	node_expando_new   -> node_expando_private_free
+	node_expando_new   -> node_expando_private_new
+	node_expando_new   -> node_new
+	node_free          -> node_tree_free
+	node_padding_new   -> node_new
+	node_padding_new   -> node_padding_private_free
+	node_padding_new   -> node_padding_private_new
+	node_set_child     -> node_get_child
+	node_set_child     -> node_tree_free
+	node_text_new      -> node_new
+	node_tree_free     -> node_free
+
+}

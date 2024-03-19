@@ -14,71 +14,77 @@
 <polygon fill="none" stroke="#e0e000" stroke-dasharray="5,2" points="8,-8 8,-221 312.5,-221 312.5,-8 8,-8"/>
 <text text-anchor="middle" x="160.25" y="-203.7" font-family="Times,serif" font-size="14.00">Config Functions</text>
 </g>
-<!-- expando_reset -->
-<g id="node1" class="node">
-<title>expando_reset</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M39.17,-164.88C39.17,-164.88 127.33,-164.88 127.33,-164.88 131.04,-164.88 134.75,-168.58 134.75,-172.29 134.75,-172.29 134.75,-179.71 134.75,-179.71 134.75,-183.42 131.04,-187.12 127.33,-187.12 127.33,-187.12 39.17,-187.12 39.17,-187.12 35.46,-187.12 31.75,-183.42 31.75,-179.71 31.75,-179.71 31.75,-172.29 31.75,-172.29 31.75,-168.58 35.46,-164.88 39.17,-164.88"/>
-<text text-anchor="middle" x="83.25" y="-171.72" font-family="Times,serif" font-size="12.00">expando_reset</text>
-</g>
 <!-- expando_destroy -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>expando_destroy</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M193.92,-127.88C193.92,-127.88 297.08,-127.88 297.08,-127.88 300.79,-127.88 304.5,-131.58 304.5,-135.29 304.5,-135.29 304.5,-142.71 304.5,-142.71 304.5,-146.42 300.79,-150.12 297.08,-150.12 297.08,-150.12 193.92,-150.12 193.92,-150.12 190.21,-150.12 186.5,-146.42 186.5,-142.71 186.5,-142.71 186.5,-135.29 186.5,-135.29 186.5,-131.58 190.21,-127.88 193.92,-127.88"/>
-<text text-anchor="middle" x="245.5" y="-134.72" font-family="Times,serif" font-size="12.00">expando_destroy</text>
+<path fill="#ffffff" stroke="black" stroke-width="1.5" d="M193.92,-16.88C193.92,-16.88 297.08,-16.88 297.08,-16.88 300.79,-16.88 304.5,-20.58 304.5,-24.29 304.5,-24.29 304.5,-31.71 304.5,-31.71 304.5,-35.42 300.79,-39.12 297.08,-39.12 297.08,-39.12 193.92,-39.12 193.92,-39.12 190.21,-39.12 186.5,-35.42 186.5,-31.71 186.5,-31.71 186.5,-24.29 186.5,-24.29 186.5,-20.58 190.21,-16.88 193.92,-16.88"/>
+<text text-anchor="middle" x="245.5" y="-23.73" font-family="Times,serif" font-size="12.00">expando_destroy</text>
 </g>
-<!-- expando_reset&#45;&gt;expando_destroy -->
-<g id="edge1" class="edge">
-<title>expando_reset&#45;&gt;expando_destroy</title>
-<path fill="none" stroke="black" d="M132.33,-164.9C150.71,-160.65 171.79,-155.79 190.67,-151.43"/>
-<polygon fill="black" stroke="black" points="190.98,-152.92 195.45,-150.09 190.19,-149.51 190.98,-152.92"/>
-</g>
-<!-- expando_equal -->
-<g id="node3" class="node">
-<title>expando_equal</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M199.92,-164.88C199.92,-164.88 291.08,-164.88 291.08,-164.88 294.79,-164.88 298.5,-168.58 298.5,-172.29 298.5,-172.29 298.5,-179.71 298.5,-179.71 298.5,-183.42 294.79,-187.12 291.08,-187.12 291.08,-187.12 199.92,-187.12 199.92,-187.12 196.21,-187.12 192.5,-183.42 192.5,-179.71 192.5,-179.71 192.5,-172.29 192.5,-172.29 192.5,-168.58 196.21,-164.88 199.92,-164.88"/>
-<text text-anchor="middle" x="245.5" y="-171.72" font-family="Times,serif" font-size="12.00">expando_equal</text>
-</g>
-<!-- expando_reset&#45;&gt;expando_equal -->
-<g id="edge2" class="edge">
-<title>expando_reset&#45;&gt;expando_equal</title>
-<path fill="none" stroke="black" d="M134.51,-176C151.17,-176 169.84,-176 187,-176"/>
-<polygon fill="black" stroke="black" points="186.76,-177.75 191.76,-176 186.76,-174.25 186.76,-177.75"/>
-</g>
-<!-- expando_string_set -->
-<g id="node4" class="node">
-<title>expando_string_set</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.92,-127.88C24.92,-127.88 141.58,-127.88 141.58,-127.88 145.29,-127.88 149,-131.58 149,-135.29 149,-135.29 149,-142.71 149,-142.71 149,-146.42 145.29,-150.12 141.58,-150.12 141.58,-150.12 24.92,-150.12 24.92,-150.12 21.21,-150.12 17.5,-146.42 17.5,-142.71 17.5,-142.71 17.5,-135.29 17.5,-135.29 17.5,-131.58 21.21,-127.88 24.92,-127.88"/>
-<text text-anchor="middle" x="83.25" y="-134.72" font-family="Times,serif" font-size="12.00">expando_string_set</text>
-</g>
-<!-- expando_string_set&#45;&gt;expando_destroy -->
-<g id="edge3" class="edge">
-<title>expando_string_set&#45;&gt;expando_destroy</title>
-<path fill="none" stroke="black" d="M148.97,-139C159.45,-139 170.3,-139 180.75,-139"/>
-<polygon fill="black" stroke="black" points="180.52,-140.75 185.52,-139 180.52,-137.25 180.52,-140.75"/>
-</g>
-<!-- expando_string_set&#45;&gt;expando_equal -->
-<g id="edge4" class="edge">
-<title>expando_string_set&#45;&gt;expando_equal</title>
-<path fill="none" stroke="black" d="M132.33,-150.1C150.71,-154.35 171.79,-159.21 190.67,-163.57"/>
-<polygon fill="black" stroke="black" points="190.19,-165.49 195.45,-164.91 190.98,-162.08 190.19,-165.49"/>
+<!-- startup_only -->
+<g id="node2" class="node">
+<title>startup_only</title>
+<path fill="#ffffff" stroke="black" stroke-width="1.5" d="M207.42,-53.88C207.42,-53.88 283.58,-53.88 283.58,-53.88 287.29,-53.88 291,-57.58 291,-61.29 291,-61.29 291,-68.71 291,-68.71 291,-72.42 287.29,-76.12 283.58,-76.12 283.58,-76.12 207.42,-76.12 207.42,-76.12 203.71,-76.12 200,-72.42 200,-68.71 200,-68.71 200,-61.29 200,-61.29 200,-57.58 203.71,-53.88 207.42,-53.88"/>
+<text text-anchor="middle" x="245.5" y="-60.73" font-family="Times,serif" font-size="12.00">startup_only</text>
 </g>
 <!-- expando_native_get -->
-<g id="node5" class="node">
+<g id="node3" class="node">
 <title>expando_native_get</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M23.42,-90.88C23.42,-90.88 143.08,-90.88 143.08,-90.88 146.79,-90.88 150.5,-94.58 150.5,-98.29 150.5,-98.29 150.5,-105.71 150.5,-105.71 150.5,-109.42 146.79,-113.12 143.08,-113.12 143.08,-113.12 23.42,-113.12 23.42,-113.12 19.71,-113.12 16,-109.42 16,-105.71 16,-105.71 16,-98.29 16,-98.29 16,-94.58 19.71,-90.88 23.42,-90.88"/>
-<text text-anchor="middle" x="83.25" y="-97.72" font-family="Times,serif" font-size="12.00">expando_native_get</text>
-</g>
-<!-- expando_native_set -->
-<g id="node6" class="node">
-<title>expando_native_set</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.17,-53.88C24.17,-53.88 142.33,-53.88 142.33,-53.88 146.04,-53.88 149.75,-57.58 149.75,-61.29 149.75,-61.29 149.75,-68.71 149.75,-68.71 149.75,-72.42 146.04,-76.12 142.33,-76.12 142.33,-76.12 24.17,-76.12 24.17,-76.12 20.46,-76.12 16.75,-72.42 16.75,-68.71 16.75,-68.71 16.75,-61.29 16.75,-61.29 16.75,-57.58 20.46,-53.88 24.17,-53.88"/>
-<text text-anchor="middle" x="83.25" y="-60.73" font-family="Times,serif" font-size="12.00">expando_native_set</text>
+<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M23.42,-164.88C23.42,-164.88 143.08,-164.88 143.08,-164.88 146.79,-164.88 150.5,-168.58 150.5,-172.29 150.5,-172.29 150.5,-179.71 150.5,-179.71 150.5,-183.42 146.79,-187.12 143.08,-187.12 143.08,-187.12 23.42,-187.12 23.42,-187.12 19.71,-187.12 16,-183.42 16,-179.71 16,-179.71 16,-172.29 16,-172.29 16,-168.58 19.71,-164.88 23.42,-164.88"/>
+<text text-anchor="middle" x="83.25" y="-171.72" font-family="Times,serif" font-size="12.00">expando_native_get</text>
 </g>
 <!-- expando_string_get -->
-<g id="node7" class="node">
+<g id="node4" class="node">
 <title>expando_string_get</title>
-<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.17,-16.88C24.17,-16.88 142.33,-16.88 142.33,-16.88 146.04,-16.88 149.75,-20.58 149.75,-24.29 149.75,-24.29 149.75,-31.71 149.75,-31.71 149.75,-35.42 146.04,-39.12 142.33,-39.12 142.33,-39.12 24.17,-39.12 24.17,-39.12 20.46,-39.12 16.75,-35.42 16.75,-31.71 16.75,-31.71 16.75,-24.29 16.75,-24.29 16.75,-20.58 20.46,-16.88 24.17,-16.88"/>
-<text text-anchor="middle" x="83.25" y="-23.73" font-family="Times,serif" font-size="12.00">expando_string_get</text>
+<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.17,-127.88C24.17,-127.88 142.33,-127.88 142.33,-127.88 146.04,-127.88 149.75,-131.58 149.75,-135.29 149.75,-135.29 149.75,-142.71 149.75,-142.71 149.75,-146.42 146.04,-150.12 142.33,-150.12 142.33,-150.12 24.17,-150.12 24.17,-150.12 20.46,-150.12 16.75,-146.42 16.75,-142.71 16.75,-142.71 16.75,-135.29 16.75,-135.29 16.75,-131.58 20.46,-127.88 24.17,-127.88"/>
+<text text-anchor="middle" x="83.25" y="-134.72" font-family="Times,serif" font-size="12.00">expando_string_get</text>
+</g>
+<!-- expando_native_set -->
+<g id="node5" class="node">
+<title>expando_native_set</title>
+<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.17,-90.88C24.17,-90.88 142.33,-90.88 142.33,-90.88 146.04,-90.88 149.75,-94.58 149.75,-98.29 149.75,-98.29 149.75,-105.71 149.75,-105.71 149.75,-109.42 146.04,-113.12 142.33,-113.12 142.33,-113.12 24.17,-113.12 24.17,-113.12 20.46,-113.12 16.75,-109.42 16.75,-105.71 16.75,-105.71 16.75,-98.29 16.75,-98.29 16.75,-94.58 20.46,-90.88 24.17,-90.88"/>
+<text text-anchor="middle" x="83.25" y="-97.72" font-family="Times,serif" font-size="12.00">expando_native_set</text>
+</g>
+<!-- expando_native_set&#45;&gt;startup_only -->
+<g id="edge1" class="edge">
+<title>expando_native_set&#45;&gt;startup_only</title>
+<path fill="none" stroke="black" d="M132.33,-90.9C151.88,-86.38 174.48,-81.17 194.25,-76.6"/>
+<polygon fill="black" stroke="black" points="194.53,-78.1 199.01,-75.27 193.75,-74.69 194.53,-78.1"/>
+</g>
+<!-- expando_reset -->
+<g id="node6" class="node">
+<title>expando_reset</title>
+<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M39.17,-53.88C39.17,-53.88 127.33,-53.88 127.33,-53.88 131.04,-53.88 134.75,-57.58 134.75,-61.29 134.75,-61.29 134.75,-68.71 134.75,-68.71 134.75,-72.42 131.04,-76.12 127.33,-76.12 127.33,-76.12 39.17,-76.12 39.17,-76.12 35.46,-76.12 31.75,-72.42 31.75,-68.71 31.75,-68.71 31.75,-61.29 31.75,-61.29 31.75,-57.58 35.46,-53.88 39.17,-53.88"/>
+<text text-anchor="middle" x="83.25" y="-60.73" font-family="Times,serif" font-size="12.00">expando_reset</text>
+</g>
+<!-- expando_reset&#45;&gt;expando_destroy -->
+<g id="edge2" class="edge">
+<title>expando_reset&#45;&gt;expando_destroy</title>
+<path fill="none" stroke="black" d="M132.33,-53.9C150.71,-49.65 171.79,-44.79 190.67,-40.43"/>
+<polygon fill="black" stroke="black" points="190.98,-41.92 195.45,-39.09 190.19,-38.51 190.98,-41.92"/>
+</g>
+<!-- expando_reset&#45;&gt;startup_only -->
+<g id="edge3" class="edge">
+<title>expando_reset&#45;&gt;startup_only</title>
+<path fill="none" stroke="black" d="M134.51,-65C153.56,-65 175.24,-65 194.28,-65"/>
+<polygon fill="black" stroke="black" points="194.11,-66.75 199.1,-65 194.1,-63.25 194.11,-66.75"/>
+</g>
+<!-- expando_string_set -->
+<g id="node7" class="node">
+<title>expando_string_set</title>
+<path fill="#ffffe0" stroke="black" stroke-width="1.5" d="M24.92,-16.88C24.92,-16.88 141.58,-16.88 141.58,-16.88 145.29,-16.88 149,-20.58 149,-24.29 149,-24.29 149,-31.71 149,-31.71 149,-35.42 145.29,-39.12 141.58,-39.12 141.58,-39.12 24.92,-39.12 24.92,-39.12 21.21,-39.12 17.5,-35.42 17.5,-31.71 17.5,-31.71 17.5,-24.29 17.5,-24.29 17.5,-20.58 21.21,-16.88 24.92,-16.88"/>
+<text text-anchor="middle" x="83.25" y="-23.73" font-family="Times,serif" font-size="12.00">expando_string_set</text>
+</g>
+<!-- expando_string_set&#45;&gt;expando_destroy -->
+<g id="edge4" class="edge">
+<title>expando_string_set&#45;&gt;expando_destroy</title>
+<path fill="none" stroke="black" d="M148.97,-28C159.45,-28 170.3,-28 180.75,-28"/>
+<polygon fill="black" stroke="black" points="180.52,-29.75 185.52,-28 180.52,-26.25 180.52,-29.75"/>
+</g>
+<!-- expando_string_set&#45;&gt;startup_only -->
+<g id="edge5" class="edge">
+<title>expando_string_set&#45;&gt;startup_only</title>
+<path fill="none" stroke="black" d="M132.33,-39.1C151.88,-43.62 174.48,-48.83 194.25,-53.4"/>
+<polygon fill="black" stroke="black" points="193.75,-55.31 199.01,-54.73 194.53,-51.9 193.75,-55.31"/>
 </g>
 </g>
 </svg>

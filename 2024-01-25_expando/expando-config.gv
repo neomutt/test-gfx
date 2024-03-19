@@ -29,13 +29,17 @@ digraph callgraph {
 		style="dashed"
 		label="Config Functions"
 
+		node [ fillcolor="#ffffff" ]
+		expando_destroy
+		startup_only
+
 		node [ fillcolor="#ffffe0" ]
+		expando_native_get
+		expando_string_get
+		expando_native_set -> startup_only
 		expando_reset      -> expando_destroy
-		expando_reset      -> expando_equal
+		expando_reset      -> startup_only
 		expando_string_set -> expando_destroy
-		expando_string_set -> expando_equal
-		expando_native_get    
-		expando_native_set    
-		expando_string_get    
+		expando_string_set -> startup_only
 	}
 }
